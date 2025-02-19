@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-base.dScribeAI",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Marketing & Content",
+		"Development"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.dscribeai.com/quickstart#create-your-api-key"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.dscribeai.com/quickstart"
+			}
+		]
+	}
+}
