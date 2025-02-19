@@ -1,19 +1,27 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "dscribeai-n8n-node",
   "version": "0.1.0",
-  "description": "",
+  "description": "dScribeAI n8n Node",
   "keywords": [
-    "n8n-community-node-package"
+    "dScribe AI",
+    "n8n",
+    "n8n node",
+    "Social Media Video",
+    "Social Media Video Transcription",
+    "Social Media Video Analysis",
+    "Transcription",
+    "Video analysis",
+    "Video transcription"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Jordan",
+    "email": "jordan@dscribeai.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/jordan-m/node-test.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -25,6 +33,7 @@
     "preinstall": "npx only-allow pnpm",
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
+    "start": "pnpm build && docker restart n8n-dev && docker logs n8n-dev -f",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",

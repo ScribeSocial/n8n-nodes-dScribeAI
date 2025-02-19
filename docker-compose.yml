@@ -1,0 +1,14 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n-dev
+    restart: unless-stopped
+    ports:
+      - 5678:5678
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./data:/home/node/.n8n
+      # - /<path-to-cloned-repo>/dist:/home/node/.n8n/custom/node_modules/<repo-name> # one line per package
+      - C:\Users\jordan\Dev\n8n-node\dist:/home/node/.n8n/custom/node_modules/n8n-node
+
+      # Example: /Users/mario/Development/n8n-nodes-test/dist:/home/node/.n8n/custom/node_modules/n8n-nodes-test
