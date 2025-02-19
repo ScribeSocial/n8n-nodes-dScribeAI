@@ -1,12 +1,12 @@
 {
-  "name": "dscribeai-n8n-node",
+  "name": "n8n-nodes-dscribeai",
   "version": "0.1.0",
   "description": "dScribeAI n8n Node",
   "keywords": [
     "dScribe AI",
     "n8n",
-    "n8n node",
-    "Social Media Video",
+    "n8n-community-node-package",
+    "Social Media",
     "Social Media Video Transcription",
     "Social Media Video Analysis",
     "Transcription",
@@ -33,7 +33,6 @@
     "preinstall": "npx only-allow pnpm",
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
-    "start": "pnpm build && docker restart n8n-dev && docker logs n8n-dev -f",
     "format": "prettier nodes credentials --write",
     "lint": "eslint nodes credentials package.json",
     "lintfix": "eslint nodes credentials package.json --fix",
@@ -45,12 +44,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/dScribeAI.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/dScribeAi/dScribeAi.node.js"
     ]
   },
   "devDependencies": {
