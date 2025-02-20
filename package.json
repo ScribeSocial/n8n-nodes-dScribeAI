@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-dscribeai",
   "version": "0.1.0",
-  "description": "dScribeAI n8n Node",
+  "description": "dScribe AI is an API that delivers visual summaries, transcriptions, and detects brands from videos found online.",
   "keywords": [
     "dScribe AI",
     "n8n",
